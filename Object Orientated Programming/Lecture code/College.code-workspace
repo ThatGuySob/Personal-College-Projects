@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "Graphicstest",
+			"path": "../../../../../../PlatformIO/Projects/Graphicstest"
+		},
+		{
+			"name": "graphictest1",
+			"path": "../../../../../../PlatformIO/Projects/graphictest1"
+		},
+		{
+			"name": "graphictest3",
+			"path": "../../PlatformIO/Projects/graphictest3"
+		},
+		{
+			"name": "graphictest4",
+			"path": "../../../../../../PlatformIO/Projects/graphictest4"
+		},
+		{
+			"name": "test",
+			"path": "../../../../../../PlatformIO/Projects/test"
+		},
+		{
+			"name": "Kirby Jump",
+			"path": "../../PlatformIO/Projects/Kirby Jump"
+		},
+		{
+			"name": "Assembly2",
+			"path": "../../../../OneDrive/Documents/PlatformIO/Projects/Assembly2"
+		}
+	],
+	"settings": {}
+}
