@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<style>
+  * {box-sizing: border-box}
+</style>
+</head>
+<body>
+
+
+<div style="display:block;text-align:left"><a href="index.html" imageanchor="1"><img src="Photos/logo.png" width="50" height="50" border="0" img align="left"></a>
+</div>
+
+ <div style="display:block;text-align:left">
+<h1>Microbit Clap-on</h1>
+<hr>
+
+
+
+<div class="sticky">
+<br>
+
+<div style="width:100%">
+  
+  <div class="nextto"><a href="Products.html" >Products</a></div>
+  <div class="nextto"><a href="About.html" >About</a></div>
+  <div class="nextto"><a href="RC.html" >Remote Control</a></div>
+  
+</div>
+</div>
+
+<div class="Text">
+  <h2>About Microbit Clap-on</h2>
+  <p> With our brand-new technology we have revolutionised the definition of microbits, we invested our best inventers on on this said product. <br><br> With Microbit Clap-on you can work more hands free around your house or office, it gets rid of the unnessecary use of switchs and buttons and simply work on your clapping</p>
+
+<h3><b>How it works</b></h3>
+  <ol>
+    <li>Connect the microbit to an outlet where you wish to use it.</li>
+    <li>You want to implement our special add ons lightbulbs and switches.</li>
+    <li>Use our built in Website system to connect to the Microbit</li>
+    <li>Programme what shortcuts you want for claps.</li>
+    <li>Save time daily.</li>   
+  </ol>
+
+<h2>About us - MicrobitHut™</h2>
+  <p>We've been found way back in 1999 by our CEO Mike Parker, originally to create said micro systems and by chance got sponsered and cooperated with BBC, ever since then we have created several products that were largely accepted by the public. </p>
+  <p>Mike states that it all started within a simple Garage but it proceeded to be sought after the BBC has been aware of his project and so they invested into it, and it only grew from there. </p>
+
+  <!-- a slideshow that utilises javascript to smoothly go from one picture to another -->
+  
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Photos/building.png" style="width:50%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Photos/inside.png" style="width:50%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Photos/inside2.png" style="width:50%">
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+</div>
+
+<br><br><br><br>
+<div class="blackbox">
+  <br>
+  <br>
+  <br>
+<b></b><p1>Copyright 1999-2022 by Me. All Rights Reserved.<br>
+MicrobitHut™ is Powered by Repl.it</p1></b>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>

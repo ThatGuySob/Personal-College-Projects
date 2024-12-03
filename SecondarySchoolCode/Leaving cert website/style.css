@@ -1,0 +1,311 @@
+/*the navigation bar stickyness*/
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    height: 65px;
+    font-size:110%;  
+    opacity: 0.85; 
+    z-index: 1;
+    }
+/*orgnises the inside of the navigation bar*/
+    .nextto {
+    display: inline-block;
+    width: 30%;
+    float: top;
+    text-align: 10px;
+    }
+/*h1 and several basic shortcuts have been modified to accomadate the website design*/
+    h1 {
+    color:#57AC0D;
+    font-size:220%;
+    }
+    
+    body, html {
+    height: 100%;
+    }
+    body {
+    height: 100%;
+    margin: 0;
+    background-image: url("Photos/background2.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+/*text classes which have differences between themselves */
+    .Text {
+    padding: 5px;
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    font-size:110%;  
+    z-index: 2;
+    opacity: 0.85;
+    color: #073763;
+    } 
+    .Text2 {
+    padding: 1em;
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    font-size:110%;  
+    z-index: 2;
+    opacity: 0.85;
+    color: #073763;
+    }
+    .Text3 {
+    padding: 5px;
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: Left;
+    font-size:110%;  
+    z-index: 2;
+    opacity: 0.85;
+    color: #073763;
+    width:30%;
+    } 
+    p {
+    color: #073763;
+    font-size: 110%;
+    text-align:left;
+    }
+    h2 {
+    color: #073763;
+    text-align:left;
+    }
+    h3 {
+    color: #073763;
+    text-align:left;
+    }
+    b {
+    color: #073763;
+    font-size: 110%;
+    text-align:left;
+    }
+    a {
+    color: #57AC0D;
+    font-size: 110%;
+    text-align:left;
+    } 
+    p1 {
+    color: #ffffff;
+    font-size: 110%;
+    text-align:centre;
+    }
+    ol {
+    color: #073763;
+    font-size: 110%;
+    text-align:left;
+    }
+/*the following few css is used for the products page, this organises and puts each product in a table form and keeps it more asthetically pleasing*/
+    nav {
+    float: left;
+    width: 40%;
+    height: 500px;
+    background: #ccc;
+    padding: 20px;
+    }
+    article {
+    float: left;
+    padding: 20px;
+    width: 50%;
+    background-color: #f1f1f1;
+    height: 500px; 
+    }
+    section::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    .blackbox {
+    bottom: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color:black;
+    text-align: center;
+    height:150px;
+    }
+     input[type=text] {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;          border-radius: 3px;
+      text-align:left
+      
+    }
+    
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+    
+    .icon-container {
+      margin-bottom: 20px;
+      padding: 7px 0;
+      font-size: 24px;
+    }
+  /*following css is used as inputs for the form gound on the ordering page*/
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    }
+    
+    .btn:hover {
+      background-color: #45a049;
+    }
+    
+    hr {
+      border: 1px solid lightgrey;
+    }
+    
+    span.price {
+      float: right;
+      color: grey;
+    }
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+    }      
+    .Text4 {
+    padding: 5px;
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    font-size:110%;  
+    z-index: 2;
+    opacity: 0.85;
+    color: #073763;
+    } 
+/*the little tooltip which can e found on the ordering page, used to replicate how a normal ordering page may work*/
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+    }
+    
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+    
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+    }
+    
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+/*includes the css for the slideshow and how it can be navigated */
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
