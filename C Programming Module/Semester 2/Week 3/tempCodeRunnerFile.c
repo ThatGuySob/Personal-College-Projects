@@ -1,0 +1,1 @@
+printf("The most common character is %c\n", most);
