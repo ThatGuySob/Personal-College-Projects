@@ -25,6 +25,6 @@ def process_image(save_path):
     print("Extracted Text: ", text)
 
 if __name__ == '__main__':
-    image_save_path = r'C:\Users\barte\OneDrive\Documents\College\Python General Code\snip.png'
+    image_save_path = 
     open_snipping_tool()
     process_image(image_save_path)
