@@ -1,0 +1,93 @@
+1.
+start code 
+	a = 4, 3, 1, 6
+	n = array.length
+	i = 0
+	max = a[i]
+	min = a[i]
+	while i < N
+		if max < a[i]
+			max = a[i]
+			i = i + 1
+		end if
+		if min > a[i]
+			min = a[i]
+			i = i + 1
+		end if
+	end while 
+end code
+
+2. 
+
+its o(n) scale
+
+3. 
+
+#include <stdio.h>
+int main()
+{
+    int array[] = {4, 3, 1, 6};
+	int N = 3;
+	int i = 0;
+	int max = array[i];
+	int min = array[i];
+
+
+	while (i < N)
+		if (max < array[i])
+		{
+        	max = array[i];
+			i = i + 1;
+        }
+		if (min > array[i])
+		{
+            min = array[i];
+			i = i + 1;
+        }
+
+    printf("max is %d and min is %d", max, min);
+
+    return 0;
+}
+
+4.
+start code 
+	a = 1, 3, 4, 6
+	n = array.length
+	search = 3
+	i = 0
+	while i < N
+		if search == a[i]
+			break
+		end if
+		else
+			i = i + 1
+		end else
+	end while 
+end code
+
+5. 
+the big o notation is o(n)
+
+6. 
+
+
+#include <stdio.h>
+int main()
+{
+    int array[] = {1, 3, 4, 6};
+	int N = 3;
+	int i = 0;
+	int search = 4;
+
+
+	for (i = 0; i < N; i++)
+		if (search == array[i])
+		{
+        	break;
+        }
+
+    printf("the position of %d is %d", search, (i + 1));
+
+    return 0;
+}
