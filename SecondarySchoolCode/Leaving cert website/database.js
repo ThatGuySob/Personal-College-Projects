@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDz-QBTDYxsi9w2a25BUtbWjsce5d1ZuSE",
+  apiKey: "",
   authDomain: "microbitnoisereader.firebaseapp.com",
   databaseURL: "https://microbitnoisereader-default-rtdb.firebaseio.com",
   projectId: "microbitnoisereader",
