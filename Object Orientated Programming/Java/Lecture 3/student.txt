@@ -1,0 +1,193 @@
+public class student
+{
+    private String name;
+    private Date dateOfBirth;
+    private int startYear;
+    private String address;
+    private String programme;
+
+    public Student(String name, Date dateOfBirth, String address, String programme)
+    {
+        setName(name); // what's sort of wrong with this?
+        //set....etc......etc //call other setter methods
+    } // end of the constructor
+
+    //getters and setters
+    public String getName()
+    {
+        return name;
+    }
+
+    
+    public void setName (String name)
+    {
+        this.name = name;
+    }
+    // other getters and setters etc.
+
+    // possibly other methods .. 
+}
+/* 
+---------------------------------------
+public class Staff
+{
+    private String name; // same as students
+    private Date dateOfBirth; // same as students
+    private int startYear; // same as students
+    private String address; // same as students
+    private String role; // these two are different to students
+    private String schoolName; 
+
+
+
+    public Student(String name, Date dateOfBirth, String address, String programme)
+    {
+        setName(name); // what's sort of wrong with this?
+        //set....etc......etc //call other setter methods
+    } // end of the constructor
+
+    //getters and setters
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName (String name)
+    {
+        this.name = name;
+    }
+    // other getters and setters etc.
+
+    // possibly other methods .. 
+}
+  
+
+------------------------------------------------
+
+public class Person
+{
+    // write out the code.. attributes, the constructor, and list the getters and setters 
+    // (just the method headers)..... don't have to write out all the code
+
+    private String name;
+    private Date dateOfBirth;
+    private int startYear;
+    private String address;
+
+    public Person(String name, Date dateOfBirth, int startYear, String address)
+    { // use the setters to set the values
+        setName(name); // what's sort of wrong with this?
+        //set....etc......etc //call other setter methods
+    } // end of the constructor
+
+    //getters and setters
+    public void setName (String name)
+    {
+        this.name = name;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+    public void setDateOfBirth(Date dateOfBirth)
+    etc etc
+
+    / override the toString() method
+
+    public String  toString() 
+    {
+        return "this person's name is " + getName() + " and their address is " + ... etc etc.
+    }
+
+}
+
+public class student extend Person // "extends" is inheritance in jaba
+{
+    private String programme; // only need to specify the extra attributes that we're not getting from person
+
+    //constructor
+    public Student(String name, Date dateOfBirth, int startYear, String address, String programme)
+    {
+        super(name, dateOfBirth, startYear, address); // this is calling the Person constructor ... 
+        setProgramme(programme);
+
+    } // end of the constructor
+    //constructor
+    public Staff(String name, Date dateOfBirth, int startYear, String address, String schoolName, String role)
+    {
+        super(name, dateOfBirth, startYear, address); // this is calling the Person constructor ... 
+        setSchoolName(schoolName);
+        setRole(role);
+
+    } // end of the constructor
+
+    //getters and setters method // we already "have" getters and setters for all byt one of the attributes.
+
+    public String getProgramme()
+    {
+        return this.programme;
+    }
+    
+    public void setProgramme (String programme)
+    {
+        this.programme = programme;
+    }
+
+    public String getSchoolName()
+    {
+        return this.schoolName;
+    }
+    
+    public void setSchoolName (String schoolName)
+    {
+        this.schoolName = schoolName;
+    }
+
+    public String getRole()
+    {
+        return this.role;
+    }
+    
+    public void setRole (String role)
+    {
+        this.role = role;
+    }
+    // other getters and setters etc.
+
+    // possibly other methods .. 
+}
+---------------------------------------------
+
+toString() method in the person class
+
+public String toString()
+{
+    return"this perosn is called " + name + " and lives at " + address + ", date of birth is " + dateOfBirth + " and started in " startYear
+
+}
+
+somewhere else... you'd have a person object using this. e.getName
+Person p1 = new Person ("john", "21 meadowvale, 22/10/2000, 2022); creating a person object;
+System.out.print(p1.toString()); // and would come the nice string ... etc
+
+----------------------------------
+
+//toString() method in the Staff class - and you want to avoid rewriting code...
+
+public String toString()
+{
+    return super.toString + " and their role is " + role + " and they work in the " + schoolName;
+
+}
+
+----------------------------------
+
+// somewhere else... where you've a staff person
+
+Staff s1 = new Staff("Jay", "18 meadowvale, 22/01/2023, 2025, "lecturer, "school of computer science");
+System.out.print(s1.toString()); // and you're calling to toString in the STAFF class... because the system looks first
+// in the class that the object is an instance of - i.e staff// toString method in Staff class is OVERRIDING the toString in the person
+
+
+*/

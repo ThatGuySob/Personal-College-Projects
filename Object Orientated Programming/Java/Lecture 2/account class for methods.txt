@@ -1,0 +1,52 @@
+// write out code that would go in a main method to 
+1) instantiate an object of Account and 
+2) call each of it's methods for that object
+
+///////////////////////////////////////
+
+rough work,,.... in the main method:
+
+// instantiate an object :
+
+Account cutomer1 = new Account(); // note - theres no constructor here... so just creating an empty object
+customer.depositMoney(200);
+double balance = customer1.getBalance(); //retrieve balance
+customer1.setAccountType("deposit Account");
+cus
+
+
+class Account
+{
+    private double balance;
+    private String accountHolder;
+    private String accountType
+
+/    public void depositMoney(double amount)
+/    {
+/        if (amount > 0)
+/        {
+/            balance+= amount;
+/            System.out.println("Deposited: $"+ amount);
+/        } 
+/        else
+/        {
+/            System.out.println("Invalid deposit amount");
+/        }
+/        
+/    }  
+
+    public void depositMoney(double amount, String recordReason)
+    {
+
+    }
+
+    public double getBalance()
+    {
+        return blanace;
+    }
+
+    public void setAccountType(String type)
+    {
+        this.accountType = type;
+    }
+} // end class
