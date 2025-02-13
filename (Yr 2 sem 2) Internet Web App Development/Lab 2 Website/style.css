@@ -1,0 +1,25 @@
+table.center 
+        {
+        margin-left: auto; 
+        margin-right: auto;
+        }
+    th
+        {
+            text-align: center;
+            vertical-align: middle;
+        }
+    .topnav 
+        {
+            overflow: hidden;
+
+        }
+    .topnav a 
+        {
+            margin-left: auto; 
+            margin-right: auto;
+            float: left;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
